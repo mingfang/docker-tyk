@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sv start redis || exit 1
+sv start mongodb || exit 1
+
+source /etc/envvars
+env
+
+exec 2>&1
+exec tyk
