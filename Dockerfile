@@ -22,7 +22,7 @@ RUN apt-get install -y mongodb
 RUN mkdir -p /data/db
 
 #Tyk
-RUN wget https://github.com/lonelycode/tyk/releases/download/1.7/tyk.linux.amd64_1.7-1_all.deb && \
+RUN wget https://github.com/lonelycode/tyk/releases/download/1.7.1/tyk.linux.amd64_1.7.1-1_all.deb && \
     dpkg -i *deb && \
     rm *deb
 
