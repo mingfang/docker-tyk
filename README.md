@@ -24,4 +24,4 @@ Login as ```user@test.com``` with password ```test123```, if you use the ```/new
 The Gateway is exposed on port 8080.
 
 #Note
-This image was intented only for testing the entire Tyk stack quickly using Docker.
+This image was intended only for testing the entire Tyk stack quickly using Docker.
