@@ -22,12 +22,12 @@ RUN apt-get install -y mongodb
 RUN mkdir -p /data/db
 
 #Tyk
-RUN wget https://github.com/lonelycode/tyk/releases/download/1.7.1/tyk.linux.amd64_1.7.1-1_all.deb && \
+RUN wget https://github.com/lonelycode/tyk/releases/download/v1.8/tyk.linux.amd64_1.8-1_all.deb && \
     dpkg -i *deb && \
     rm *deb
 
 #Dashboard
-RUN wget -O - https://github.com/lonelycode/tyk/releases/download/1.7/tyk-dashboard-amd64-v0.9.5.tar.gz | tar xvfz -
+RUN wget -O - https://github.com/lonelycode/tyk/releases/download/v1.8/tyk-dashboard-amd64-v0.9.6.tar.gz | tar zx 
 RUN mv tyk-analytics* tyk-analytics
 
 #script to create test user
